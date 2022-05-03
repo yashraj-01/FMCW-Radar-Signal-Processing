@@ -17,12 +17,13 @@ function visualize_fmcw_radar_baseband_signals(combined_IF_signal, samples_per_c
     zlabel('Magnitude Spectrum');
 
     xh = get(gca,'XLabel');
-    set(xh, 'Units', 'Normalized')
+    set(xh, 'Units', 'Normalized');
     pos = get(xh, 'Position');
-    set(xh, 'Position',pos.*[1.1,0,0],'Rotation',15)
+    set(xh, 'Position',pos.*[1.1,0,0],'Rotation',10);
     yh = get(gca,'YLabel');
-    set(yh, 'Units', 'Normalized')
+    set(yh, 'Units', 'Normalized');
     pos = get(yh, 'Position');
-    set(yh, 'Position',pos,'Rotation',-24)
+    set(yh, 'Position',pos,'Rotation',-16);
+    fontsize(gca,20,"pixels");
 
 end

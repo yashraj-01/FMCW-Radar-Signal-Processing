@@ -33,10 +33,10 @@ if (t_start_data_collection+samples_per_chirp*(sampling_period) >= chirp_period)
 end
 
 %% Target(s) info
-no_of_targets = 1;
+no_of_targets = 3;
 range_vector = min_range + (max_range-min_range) .* rand(no_of_targets,1);
 % velocity_vector = min_velocity + (max_velocity-min_velocity) .* rand(no_of_targets,1);
-velocity_vector = 0;
+velocity_vector = [0 0 0];
 range_velocity_matrix = [range_vector(:), velocity_vector(:)];
 
 %% Radar simulation
